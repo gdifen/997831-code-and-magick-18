@@ -1,13 +1,13 @@
 var wizardWidth = 70;
-var proportionHeight = 1.337;
-var constantGetWizardY = 0.33;
+var PROPORTION_HEIGHT = 1.337;
+var CONSTANT_GET_WIZARD_Y = 0.33;
 
 var getFireballSpeed = function (left) {
-  return (left ? 5 : 2)
+  return left ? 5 : 2
 };
 
 var getWizardHeight = function () {
-  return proportionHeight * wizardWidth;
+  return PROPORTION_HEIGHT * wizardWidth;
 };
 
 var getWizardX = function (width) {
@@ -15,5 +15,5 @@ var getWizardX = function (width) {
 };
 
 var getWizardY = function (height) {
-  return height * constantGetWizardY;
+  return height * CONSTANT_GET_WIZARD_Y;
 };
