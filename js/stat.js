@@ -55,4 +55,4 @@ window.renderStatistics = function (ctx, names, times) {
 
     ctx.fillRect(CLOUD_X + GAP_TEXT + ((DISTANCE_COLUMN + GAP_TEXT) * i), positionColumn, WIDTH_COLUMN, HEIGHT_COLUMN * time / maxTime);
   });
-}
+};
